@@ -7,7 +7,8 @@ public class Main {
 
         System.out.println("What is your name? ");
         String name = scanner.nextLine();
-
-        System.out.println("Hello " + name);
+        System.out.println("What is your age? ");
+        int age = scanner.nextInt();
+        System.out.println("Hello " + name + ", your age is " + age);
     }
 }
