@@ -1,6 +1,3 @@
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 public class Main {
@@ -13,8 +10,9 @@ public class Main {
         do {
             System.out.print("Enter a name: ");
             name = scanner.next();
-
-            System.out.println(greeting + " " + name);
+            System.out.println("What is your age? ");
+            int age = scanner.nextInt();
+            System.out.println(greeting+ " " + name + ", your age is " + age);
         } while (!name.equals("exit"));
         System.out.println("You have exited the module!");
     }
