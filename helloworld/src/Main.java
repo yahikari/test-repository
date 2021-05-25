@@ -4,11 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("What is your name? ");
-        String name = scanner.nextLine();
-        System.out.println("What is your age? ");
-        int age = scanner.nextInt();
-        System.out.println("Hello " + name + ", your age is " + age);
+        System.out.println("Enter a greeting: ");
+        String greeting = scanner.next();
+        String name;
+        do {
+            System.out.print("Enter a name: ");
+            name = scanner.next();
+            System.out.println("What is your age? ");
+            int age = scanner.nextInt();
+            System.out.println(greeting+ " " + name + ", your age is " + age);
+        } while (!name.equals("exit"));
+        System.out.println("You have exited the module!");
     }
+
 }
